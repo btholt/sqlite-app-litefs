@@ -1,8 +1,3 @@
-# note: there should be one template for this, which you can update as necessary.
-# note: had to leave the getting started guide and go to the lease management section bc not using fly
-# note: lease.hostname and lease.advertise-url are not clear
-# note: we should have an example docker-compose setup with everything working both with consul
-# and static leases
 # This directory is where your application will access the database.
 fuse:
   dir: "/litefs"
