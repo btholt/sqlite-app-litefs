@@ -2,8 +2,6 @@ import Fastify from "fastify";
 import fastifyStatic from "@fastify/static";
 import path from "path";
 import registerInvoice from "./invoice.js";
-import registerInvoiceComplete from "./invoice-complete.js";
-import { hostname } from "os";
 
 const __dirname = import.meta.dirname;
 
@@ -17,7 +15,6 @@ fastify.register(fastifyStatic, {
 });
 
 fastify.register(registerInvoice, { prefix: "/invoice" });
-fastify.register(registerInvoiceComplete, { prefix: "/invoice-complete" });
 
 fastify.get("/htmx.js", function (req, reply) {
   reply.sendFile("node_modules/htmx.org/dist/htmx.js", path.join(__dirname));

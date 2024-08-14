@@ -32,4 +32,5 @@ lease:
   candidate: $IS_PRIMARY
 
 exec:
+  - cmd: "/home/node/code/import.sh"
   - cmd: "node /home/node/code/server.js"

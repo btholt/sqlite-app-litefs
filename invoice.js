@@ -1,6 +1,5 @@
 import sqlite3 from "sqlite3";
 
-// const db = new sqlite3.Database("data.db");
 const db = new sqlite3.Database("/litefs/data.db");
 
 export default function registerInvoiceComplete(fastify, opts, done) {
